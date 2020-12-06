@@ -1,0 +1,9 @@
+@mixin bordertopbot {
+    border-top: 2px solid $bg-light-gray;
+    border-bottom: 2px solid $bg-light-gray;
+    font-weight: bold;
+}
+@mixin commonprop {
+    color: $text-gray;
+    font-size: $font-size14;
+}

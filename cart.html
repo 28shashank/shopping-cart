@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Shopping Cart</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="sass/main.css" />
+</head>
+<body>
+	<!-- container -->
+	<div class="container">
+		<!-- top section -->
+		<div class="row">
+		    <div class="col-12">
+		    	<div class="header-container">
+		    		<div class="row">
+			    		<div class="col-4">All Items</div>
+					  	<div class="col-8">
+					  		<div class="info">Item <span id="itemSelectedCount">0</span> is added to cart</div>
+					  	</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<!-- /top section -->
+
+		<!-- main container -->
+		<div class="row">
+		    <div class="col-12">
+		    	<div class="row items-list-section">
+		    		<!-- items list container -->
+		    		<div class="col-8">
+				  		<div class="items-list-container">
+				  			<ul>
+								<!-- items -->
+								<p id="itemlistapi"></p>
+				  				<!-- /items -->
+				  			</ul>
+				  		</div>
+				  	</div>
+				  	<!-- items list container -->
+
+				  	<!-- cart container -->
+				  	<div class="col-4">
+				  		<div class="cart-container">
+				  			<!-- cart section -->
+				  			<div class="cartContainer">
+						        <div class="row">
+						            <div class="col-4 heading">Items</div>
+						            <div class="col-4 heading txt-center">Qty</div>
+						            <div class="col-4 heading txt-center">Price</div>
+						        </div>
+
+								<!-- items-->
+								<p id="itemDetailsContainer"></p>
+								<!-- /items-->
+
+						    </div>
+						    <!-- /cart section -->
+
+						    <!-- cart summary -->
+						    <div class="separator">&nbsp;</div>
+						    <div class="cart-summary">
+						    	<div class="row">
+						    		<div class="col-12 total-title dark-gray">Total</div>
+						    	</div>
+						    	<div class="row">
+							    	<div class="col-4">Items(<span id="itemTotalSelected">0</span>)</div>
+							    	<div class="col-4 txt-center">:</div>
+							    	<div class="col-4 txt-right"><h3>$<span id="product_total_amt">0.00</span></h3></div>
+							    </div>
+							    <div class="row">
+							    	<div class="col-4">Discount</div>
+							    	<div class="col-4 txt-center">:</div>
+							    	<div class="col-4 txt-right"><h3>-$<span id="discount">0.00</span></h3></div>
+							    </div>
+							    <div class="row">
+							    	<div class="col-4">Type Discount</div>
+							    	<div class="col-4 txt-center">:</div>
+							    	<div class="col-4 txt-right"><h3>-$<span id="type_discount">0.00</span></h3></div>
+							    </div>
+							    <div class="row total">
+							    	<div class="col-4">Order Total</div>
+							    	<div class="col-4 txt-center">:</div>
+							    	<div class="col-4 txt-right dark-gray"><h3>$<span id="total_cart_amt">0.00</span></h3></div>
+							    </div>
+						    </div>
+						    <!-- /cart summary -->
+
+				  		</div>
+				  	</div>
+					<!-- /cart container -->
+				</div>
+		    </div>
+		</div>
+		<!-- /main container -->
+
+	</div>
+	<!-- /container -->
+
+	<!-- Scripts -->
+	<script src="js/custom-scripts.js"></script>
+	<!-- /Scripts -->
+
+</body>
+</html>
